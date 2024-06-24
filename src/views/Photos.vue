@@ -24,6 +24,8 @@
   import { storeToRefs } from 'pinia';
   import { onMounted, ref } from 'vue';
   import { useRoute } from 'vue-router';
+  import { axios } from 'axios';
+
   
   export default {
     setup() {
@@ -32,6 +34,8 @@
       const { photos } = storeToRefs(albumStore);
       const showModal = ref(false);
       const modalImageUrl = ref('');
+      const axios = useAxios();
+
   
       onMounted(() => {
         const albumId = route.params.id;
