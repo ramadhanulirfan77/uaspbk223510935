@@ -15,8 +15,6 @@
   import { storeToRefs } from 'pinia';
   import { onMounted } from 'vue';
   import { useRouter } from 'vue-router';
-  import axios from 'axios';
-
   
   export default {
     setup() {
